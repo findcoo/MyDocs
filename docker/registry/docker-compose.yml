@@ -1,0 +1,9 @@
+version: '2'
+services:
+ registry:
+  image: registry:2
+  volumes:
+   - '$PWD/config.yml:/etc/docker/registry/config.yml'
+  ports:
+   - '5000:5000'
+
