@@ -11,7 +11,7 @@ kubernetes(이하 쿠브)의 설치, 업그레이드, 관리용 도구
   `aws configure` 명령을 통해 aws 프로파일을 생성한다.
   
 ## 과정
-* 설치 (자세한 건 -> [link](https://kubernetes.io/docs/getting-started-guides/kops/)
+* 설치 (자세한 건 -> [doc](https://kubernetes.io/docs/getting-started-guides/kops/)
   필자는 mac os에서 사용함으로 mac os 설치법만 서술한다.
   `brew update && brew install kubectl kops`
 * id\_rsa.pub
@@ -24,9 +24,9 @@ kubernetes(이하 쿠브)의 설치, 업그레이드, 관리용 도구
   ```
   dig 명령을 통해 제대로 만들어졌는지 확인.
   ```bash
-  dig dev.example.com
+  dig dev.example.com +short
   ```
-  Authority Section이AWS를 통과하면 성공
+  응답이 없으면 문제가 있으니 route53 설정을 확인한다.
 * S3 버켓을 생성
   클러스터의 상태를 저장하기 위한 저장소이다.
   저장소 설정을 위해 환경변수를 설정한다.
@@ -57,7 +57,7 @@ kubernetes(이하 쿠브)의 설치, 업그레이드, 관리용 도구
   kops와 terraform을 사용하여 클러스터의 상태를 관리한다.
   이전에 terraform을 별도로 설치한다. [Doc](https://www.terraform.io/intro/getting-started/install.html)
 * terraform setting
-  ```json
+  ```grooby
   // file test.tf
   terraform {
     backend "s3" {
