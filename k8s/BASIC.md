@@ -7,6 +7,8 @@
 $> kubectl get nodes # node의 정보 출력
 $> kubectl run mysql --image=mysql --port=3306 # container 배포
 $> kubectl get deployments # deployment 정보 출력
+$> kubectl delete deploymenta mysql # deployment 제거(pod과 컨테이너등 관련된 것을 제거)
+
 $> kubectl describe  ... # 상세 정보 출력
 $> kubectl logs ... # 컨테이너 로그 출력
 $> kubectl exec ... # 컨테이너에 명령을 실행시킨다
@@ -27,8 +29,16 @@ Pod은 컨테이너 및 컨테이너가 공유하는 볼륨등 배포의 자원�
 * 컨테이너의 정보
 
 ## Nodes
-Pods은 Node위에서 동작하며 Node는 k8s 엔진이 작동하는 머신을 뜻한다.
+Pod은 Node위에서 동작하며 Node는 k8s 엔진이 작동하는 머신을 뜻한다.
 
 * kubelet이 동작하여 마스터와 노드 간의 대화를 통해 pod과 컨테이너들을 관리한다.
 * 이미지 풀링, 컨테이너 런칭을 수행한다.
 
+## ConfigMap
+
+
+## Dashboard UI
+k8s를 위한 대쉬보드 앱을 설치한다.
+```bash
+$> kubectl create -f https://rawgit.com/kubernetes/dashboard/master/src/deploy/kubernetes-dashboard.yaml 
+```
