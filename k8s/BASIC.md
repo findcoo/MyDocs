@@ -34,9 +34,6 @@ Pod은 Node위에서 동작하며 Node는 k8s 엔진이 작동하는 머신을 �
 * kubelet이 동작하여 마스터와 노드 간의 대화를 통해 pod과 컨테이너들을 관리한다.
 * 이미지 풀링, 컨테이너 런칭을 수행한다.
 
-## ConfigMap
-
-
 ## Dashboard UI
 k8s를 위한 대쉬보드 앱을 설치한다.
 ```bash
