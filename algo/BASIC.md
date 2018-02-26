@@ -561,8 +561,8 @@ there is only one primary key in a table, but there can be multiple unique const
 
 ✏️ **해석**
 
-    기본키는 NULL 값을 갖지 않지만 단일 제약조건의 경우 NULL 값을 허용 할 수 있다.
-    기본키는 테이블 당 하나로 지정되지만 단일 제약조건은 복수로 지정할 수 있다.
+기본키는 NULL 값을 갖지 않지만 단일 제약조건의 경우 NULL 값을 허용 할 수 있다.
+기본키는 테이블 당 하나로 지정되지만 단일 제약조건은 복수로 지정할 수 있다.
 
 **What is database normalization?**
 
