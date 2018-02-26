@@ -474,15 +474,15 @@ console.log(1 ^ 4 ^ 4)
 ### 면접전 읽어야할 자료구조
 **What is a Data Structure?**
 
-    A data structures is a way of organizing the data so that the data can be used efficiently.
-    Different kinds of data structures are suited to different kinds of applications, and some are highly specialized to specific tasks. For example.
-    B-trees are particularly well-suited for implementation of databases, while compiler implementations usually use hash tables to look up identifiers.
+A data structures is a way of organizing the data so that the data can be used efficiently.
+Different kinds of data structures are suited to different kinds of applications, and some are highly specialized to specific tasks. For example.
+B-trees are particularly well-suited for implementation of databases, while compiler implementations usually use hash tables to look up identifiers.
 
 ✏️ **해석** 
 
-    자료 구조는 데이터를 조작함에 있어 효율적인 방법입니다.
-    다양한 종류의 데이터 구조가 다양한 요구에 의해 사용됩니다. 예로 들면 
-    밸런스 트리는 데이터베이스에 주로 사용되고 컴파일러의 경우 해쉬 테이블을 주로 사용합니다.
+자료 구조는 데이터를 조작함에 있어 효율적인 방법입니다.
+다양한 종류의 데이터 구조가 다양한 요구에 의해 사용됩니다. 예로 들면 
+밸런스 트리는 데이터베이스에 주로 사용되고 컴파일러의 경우 해쉬 테이블을 주로 사용합니다.
 
 **How is an Array different from Linked List**
 * The size of the arrays is fixed. Linked Lists are Dynamic in size.
@@ -508,37 +508,38 @@ console.log(1 ^ 4 ^ 4)
 
 **Can doubly linked be implemented using a single pointer variable in every node?**
 
-    Doubly linked list can be implemented using a single pointer. For example XOR Linked List 
+Doubly linked list can be implemented using a single pointer. For example XOR Linked List 
 
 ✏️ **해석**
 
-    양방향 연결 리스트는 하나의 포인터로 구현될 수 있으며 그 예로 XOR 연결 리스트가 있다.
+양방향 연결 리스트는 하나의 포인터로 구현될 수 있으며 그 예로 XOR 연결 리스트가 있다.
 
 **How to implement a stack using queue?**
 
-    A stack can be implemented using two queues. Let stack to be implemented be 's' and queues used to implement be 'q1' and 'q2'. Stack 's' can be implemented in two ways:
+A stack can be implemented using two queues. Let stack to be implemented be 's' and queues used to implement be 'q1' and 'q2'. Stack 's' can be implemented in two ways:
 * Method 1 (By making push operation costly)
 * Method 2 (By making pop operation costly)
 
 ✏️ **해석**
 
-    두 개의 큐를 이용해 구현할 수 있으며 두 가지 방법 있다.
-    * 새로운 값이 push 될 때, 비어있는 큐에 새로운 값을 넣고 pop이 될 큐로 교체한다.
-    * pop시에 마지막 요소를 제외하고 모든 요소를 다른 큐에 옮긴다.
+두 개의 큐를 이용해 구현할 수 있으며 두 가지 방법 있다.
+* 새로운 값이 push 될 때, 비어있는 큐에 새로운 값을 넣고 pop이 될 큐로 교체한다.
+* pop시에 마지막 요소를 제외하고 모든 요소를 다른 큐에 옮긴다.
     
 **Which Data Structures be used for implementioning LRU cache?**
 
-    We use two data structures to implement an LRU Cache.
+We use two data structures to implement an LRU Cache.
 1. Queue: which is implemented using a doubly linked list. The maximum size of the queue will be equal to the total number of frames available. The most recently used pages will be near front end and least recently pages will be near rear end.
 2. Hash with page number as key and address of the corresponding queue
 
 ✏️ **해석**
     
-   두 가지의 자료구조를 사용합니다.
-   1. 큐: 양방향 연결 리스트로 구현된 큐를 통해 구현되며 큐의 최대 크기는 캐쉬의 크기를 뜻합니다.  
-   2. 해쉬: 페이지 수를 키로 노드의 주소를 값으로 사용합니다.
+두 가지의 자료구조를 사용합니다.
+1. 큐: 양방향 연결 리스트로 구현된 큐를 통해 구현되며 큐의 최대 크기는 캐쉬의 크기를 뜻합니다.  
+2. 해쉬: 페이지 수를 키로 노드의 주소를 값으로 사용합니다.
 ### 면접전 읽어야할 데이터베이스
 **What are super, primary, candidate and foreign keys?**
+
 A superkey is a set of attributes of a relation schema upon which all attributes of the schema are functionally dependent.
 No two rows can have the same value of super key attributes.
 A Candidate key is minimal superkey, i.e no proper subset of candidate key attributes can be a superkey
@@ -548,12 +549,13 @@ Foreign key is a field in one table that uniquely identifies a row of another ta
 
 ✏️ **해석**
 
-    슈퍼키는 함수 종속 성을 갖는 관계 스키마의 속성들의 집합이다. 두 행이 같은 슈퍼키 값을 갖을 수 없다.
-    후보키는 최소화된 슈퍼키로 후보키에 속하는 속성들은 슈퍼키가 될 수 있다.
-    기본키는 후보키 중에 선택된 하나를 뜻한다. 하나의 테이블에는 하나의 기본키가 있다.
-    외래키는 다른 테이블의 특정 하나의 행을 지정하는 필드를 뜻한다.
+슈퍼키는 함수 종속 성을 갖는 관계 스키마의 속성들의 집합이다. 두 행이 같은 슈퍼키 값을 갖을 수 없다.
+후보키는 최소화된 슈퍼키로 후보키에 속하는 속성들은 슈퍼키가 될 수 있다.
+기본키는 후보키 중에 선택된 하나를 뜻한다. 하나의 테이블에는 하나의 기본키가 있다.
+외래키는 다른 테이블의 특정 하나의 행을 지정하는 필드를 뜻한다.
 
 **What is the diffrence between primary key and unique constraints?**
+
 Primary key cannot have NULL value, the unique constraints can have NULL values.
 there is only one primary key in a table, but there can be multiple unique constraints. 
 
@@ -561,7 +563,9 @@ there is only one primary key in a table, but there can be multiple unique const
 
     기본키는 NULL 값을 갖지 않지만 단일 제약조건의 경우 NULL 값을 허용 할 수 있다.
     기본키는 테이블 당 하나로 지정되지만 단일 제약조건은 복수로 지정할 수 있다.
+
 **What is database normalization?**
+
 It is a process of analyzing the given relation schemas based on their functional dependencies
 and primary keys to achieve the following desirable properties
 1) Minimizing Redundancy
@@ -571,27 +575,29 @@ that could meet desirable properties.
 
 ✏️ **해석**
 
-    함수 종속성을 기반으로 하여 릴레이션 스키마를 분석하는 과정을 뜻하며 기본키가 다음의 특성을 이루게한다.
-    1. 여분의 데이터를 최소화
-    2. 삽입, 삭제, 변경 행위의 이상 작동을 최소화
-    관계 스키마가 위 특성을 이행하지 못한다면 더 작은 관계 스키마로 분할하여 특성을 이행한다.
+함수 종속성을 기반으로 하여 릴레이션 스키마를 분석하는 과정을 뜻하며 기본키가 다음의 특성을 이루게한다.
+1. 여분의 데이터를 최소화
+2. 삽입, 삭제, 변경 행위의 이상 작동을 최소화
+관계 스키마가 위 특성을 이행하지 못한다면 더 작은 관계 스키마로 분할하여 특성을 이행한다.
 
 **What is the difference between having and where clause?**
+
 HAVING is used to specify a condition for a group or an aggregate function used in select statement.
 the WHERE clause selects before grouping. the having clause selects rows after grouping, unlike HAVING clause,
 the WHERE clause cannot contain aggregate functions.
 
 ✏️ **해석**
 
-    HAVING은 그룹 조건에서 사용된다. 그룹 이후 행을 선택하는 조건을 만든다. WHERE의 경우에는 그룹 조건 이전에 사용되며
-    그룹 조건을 포함하지 않고 전체 행을 대상으로 한다.
+HAVING은 그룹 조건에서 사용된다. 그룹 이후 행을 선택하는 조건을 만든다. WHERE의 경우에는 그룹 조건 이전에 사용되며
+그룹 조건을 포함하지 않고 전체 행을 대상으로 한다.
 
 **What is a view in SQL? How to create one**
+
 A view is a virtual table based on the result-set of an SQL statement. We can create using create view syntax
 
 ✏️ **해석**
 
-    뷰는 SQL 문에서 생성되는 가상의 테이블이다. 뷰 생성 문을 이용해 생성 할 수 있다.
+뷰는 SQL 문에서 생성되는 가상의 테이블이다. 뷰 생성 문을 이용해 생성 할 수 있다.
 
 **What are the uses of veiw?**
 1. Views can represent a subset of the data contained in a table. consequently, a view can limit the degree of exposure of the underlying tables to the outer world
@@ -610,35 +616,39 @@ A view is a virtual table based on the result-set of an SQL statement. We can cr
 6. SQL 엔진의 종류에 따라 별도의 보안 설정을 할 수 있다.
 
 **What is a Trigger**
+
 A Trigger is a code that associated with insert, update or delete operation.
 the executed automatically whenever the associated query is executed on a table.
 Triggers can be useful to maintain integiry in database.
 
 ✏️ **해석**
 
-    삽입, 삭제, 변경과 연관된 작업이다. 연관된 쿼리가 작동하면 자동적으로 실행된다.
-    데이터베이스의 무결성을 관리하는데 유용하다.
+삽입, 삭제, 변경과 연관된 작업이다. 연관된 쿼리가 작동하면 자동적으로 실행된다.
+데이터베이스의 무결성을 관리하는데 유용하다.
 
 **What is a stored procedure?**
+
 A stored procedure is like a function that contains a set of operations compiled together.
 it contains a set of operations that are commonly used in an application to do some common database tasks.
 
 ✏️ **해석**
 
-    컴파일된 명령어들 이 포함된 함수와 같이 작용한다. 어플리케이션에서 사용되는 일반적인 명령들을 포함하며 명령은 데이터베이스에 관련되어있다.
+컴파일된 명령어들 이 포함된 함수와 같이 작용한다. 어플리케이션에서 사용되는 일반적인 명령들을 포함하며 명령은 데이터베이스에 관련되어있다.
 
 **What is a transaction? What are ACID properties?**
+
 A database transaction is a set of database operations that must be treated as whole, means either all operations are executed or none of them
 an example can be bank transaction from one account to another account. Either both debit and credit operations must be executed or none of them
 ACID(Atomicity, Consitency, Isolation, Durability) is a set of properties that guarantee that database transactions are processed reliably.
 
 ✏️ **해석**
 
-    전체적으로 이루어지는 모든 데이터베이스 작업을 뜻한다. 작업은 실행되거나 혹은 아무것도 안하거나 모두를 포함한다.
-    예를 들어 은행 계좌 시스템에서 데빗 카드나 신용 카드가 사용되거나 사용되지 않음을 뜻한다.
-    ACID(원자성, 일관성, 독립성, 지속성)은 트랜잭션의 신뢰도를 결정짓는 특성이다.
+전체적으로 이루어지는 모든 데이터베이스 작업을 뜻한다. 작업은 실행되거나 혹은 아무것도 안하거나 모두를 포함한다.
+예를 들어 은행 계좌 시스템에서 데빗 카드나 신용 카드가 사용되거나 사용되지 않음을 뜻한다.
+ACID(원자성, 일관성, 독립성, 지속성)은 트랜잭션의 신뢰도를 결정짓는 특성이다.
 
 **What are indexes**
+
 A database index is a data structure that improves the speed of data retrieval operations on a database table at the cost of additional writes and
 the use of more storage space to maintain the extra copy of data.
 data can be stored only in one order on disk. To support faster access according to different values, faster search like binary search for different values
@@ -647,11 +657,12 @@ searched values.
 
 ✏️ **해석**
 
-    인덱스는 추가적인 쓰기 비용과 별도의 저장 공간을 사용하여 테이블에서의 검색 속도를 향상시키는 자료구조이다.
-    데이터는 하나의 순서로 디스크에 저장되며 다른 값으로 빠른 검색을 위해서는 이진 검색과 같은 자료구조가 필요합니다. 이를 위해
-    인덱스는 테이블에 생성되며 별도의 저장 공간을 요구합니다. 대신 빈번히 검색되는 다른 값들을 빠르게 검색 할 수 있습니다. 
+인덱스는 추가적인 쓰기 비용과 별도의 저장 공간을 사용하여 테이블에서의 검색 속도를 향상시키는 자료구조이다.
+데이터는 하나의 순서로 디스크에 저장되며 다른 값으로 빠른 검색을 위해서는 이진 검색과 같은 자료구조가 필요합니다. 이를 위해
+인덱스는 테이블에 생성되며 별도의 저장 공간을 요구합니다. 대신 빈번히 검색되는 다른 값들을 빠르게 검색 할 수 있습니다. 
 
 **What are clustered and non-clustered indexes?**
+
 Clustered indexes is the index according to which data is physically stored on disk.
 therefore, only one clustered index can be created on a given database table.
 Non-clustered indexes don`t define physical of data, but logical ordering. typically, a tree is created whose leaf point to disk records.
@@ -659,36 +670,36 @@ B-tree or B+ tree are used for this purpos.
 
 ✏️ **해석**
 
-    군집된 인덱스는 디스크에 물리적으로 저작된 인덱스를 뜻한다. 그러므로 테이블 당 하나의 군집된 인덱스를 갖을 수 있다.
-    비군집 인덱스는 물리적으로는 저장되지 않지만 논리적인 순서를 갖는다. 일반적으로 단말 노드가 디스크 리코드를 가르키는 트리가 만들어진다.
-    B-tree, B+ tree 구조가 이에 사용된다. 
+군집된 인덱스는 디스크에 물리적으로 저작된 인덱스를 뜻한다. 그러므로 테이블 당 하나의 군집된 인덱스를 갖을 수 있다.
+비군집 인덱스는 물리적으로는 저장되지 않지만 논리적인 순서를 갖는다. 일반적으로 단말 노드가 디스크 리코드를 가르키는 트리가 만들어진다.
+B-tree, B+ tree 구조가 이에 사용된다. 
 ### 면접전 읽어야할 운영체제 
 **What is a process and process table? What are different states of process**   
 
-    A process is an instance of program in execution. For example a Web Browser is a process, a shell (or command prompt) is a process.
-    The operating system is responsible for managing all the processes that are running on a computer and allocated each process a certain amount of time to use the processor. In addition, the operating system also allocates various other resources that processes will need such as computer memory or disks. To keep track of the state of all the processes, the operating system maintains a table known as the process table. Inside this table, every process is listed along with the resources the processes is using and the current state of the process.
-    Processes can be in one of three states: running, ready, or waiting. The running state means that the process has all the resources it need for execution and it has been given permission by the operating system to use the processor. Only one process can be in the running state at any given time. The remaining processes are either in a waiting state (i.e., waiting for some external event to occur such as user input or a disk access) or a ready state (i.e., waiting for permission to use the processor). In a real operating system, the waiting and ready states are implemented as queues which hold the processes in these states. The animation below shows a simple representation of the life cycle of a process
+A process is an instance of program in execution. For example a Web Browser is a process, a shell (or command prompt) is a process.
+The operating system is responsible for managing all the processes that are running on a computer and allocated each process a certain amount of time to use the processor. In addition, the operating system also allocates various other resources that processes will need such as computer memory or disks. To keep track of the state of all the processes, the operating system maintains a table known as the process table. Inside this table, every process is listed along with the resources the processes is using and the current state of the process.
+Processes can be in one of three states: running, ready, or waiting. The running state means that the process has all the resources it need for execution and it has been given permission by the operating system to use the processor. Only one process can be in the running state at any given time. The remaining processes are either in a waiting state (i.e., waiting for some external event to occur such as user input or a disk access) or a ready state (i.e., waiting for permission to use the processor). In a real operating system, the waiting and ready states are implemented as queues which hold the processes in these states. The animation below shows a simple representation of the life cycle of a process
 
 ✏️ **해석**
 
-    실행 중인 프로그램의 인스턴스, 운영체제는 이 프로세스에 대한 관리 권한을 갖고 있다는데, 프로세스들의 상태를 관리하기 위해 프로세스 테이블을 이용한다.
-    프로세스는 실행중, 준비, 대기 세가지 상태를 갖는다. 운영체제가 허용한 프로세스 만이 실행될 수 있으며 이외 프로세스는 대기 상태를 유지한다.
+실행 중인 프로그램의 인스턴스, 운영체제는 이 프로세스에 대한 관리 권한을 갖고 있다는데, 프로세스들의 상태를 관리하기 위해 프로세스 테이블을 이용한다.
+프로세스는 실행중, 준비, 대기 세가지 상태를 갖는다. 운영체제가 허용한 프로세스 만이 실행될 수 있으며 이외 프로세스는 대기 상태를 유지한다.
 
 **What is a Thread? What are the differences between process and thread**
 
-    A thread is a single sequence stream within in a process. Because threads have some of the properties of processes, they are sometimes called lightweight processes. Threads are popular way to improve application through parallelism. For example, in a browser, multiple tabs can be different threads. MS word uses multiple threads, one thread to format the text, other thread to process inputs, etc.
-    A thread has its own program counter (PC), a register set, and a stack space. Threads are not independent of one other like processes as a result threads shares with other threads their code section, data section and OS resources like open files and signals.
+A thread is a single sequence stream within in a process. Because threads have some of the properties of processes, they are sometimes called lightweight processes. Threads are popular way to improve application through parallelism. For example, in a browser, multiple tabs can be different threads. MS word uses multiple threads, one thread to format the text, other thread to process inputs, etc.
+A thread has its own program counter (PC), a register set, and a stack space. Threads are not independent of one other like processes as a result threads shares with other threads their code section, data section and OS resources like open files and signals.
 
 ✏️ **해석**
 
-    프로세스안의 하나의 흐름. 프로세스의 특성을 갖고 있기에 경량 프로세스라고도 부른다. 스레드만의 PC, 레지스터, 스택 공간을 소유한다. 프로세스 안의 스레드들은
-    메모리를 공유할 수 있다.
+프로세스안의 하나의 흐름. 프로세스의 특성을 갖고 있기에 경량 프로세스라고도 부른다. 스레드만의 PC, 레지스터, 스택 공간을 소유한다. 프로세스 안의 스레드들은
+메모리를 공유할 수 있다.
 
 **What is deadlock?**
 
-    Deadlock is a situation when two or more processes wait for each other to finish and none of them ever finish.  Consider an example when two trains are coming toward each other on same track and there is only one track, none of the trains can move once they are in front of each other.  Similar situation occurs in operating systems when there are two or more processes hold some resources and wait for resources held by other(s).
+Deadlock is a situation when two or more processes wait for each other to finish and none of them ever finish.  Consider an example when two trains are coming toward each other on same track and there is only one track, none of the trains can move once they are in front of each other.  Similar situation occurs in operating systems when there are two or more processes hold some resources and wait for resources held by other(s).
 
 ✏️ **해석**
 
-    프로세스가 끝나기를 기다리는 동안 프로세스는 끝나지 않고 다른 프로세스는 대기 상태로 머무르는 현상.
-    주로 상호배제, 자원 독점의 문제로 발생한다.
+프로세스가 끝나기를 기다리는 동안 프로세스는 끝나지 않고 다른 프로세스는 대기 상태로 머무르는 현상.
+주로 상호배제, 자원 독점의 문제로 발생한다.
