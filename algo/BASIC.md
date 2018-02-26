@@ -682,7 +682,7 @@ Processes can be in one of three states: running, ready, or waiting. The running
 
 ✏️ **해석**
 
-실행 중인 프로그램의 인스턴스, 운영체제는 이 프로세스에 대한 관리 권한을 갖고 있다는데, 프로세스들의 상태를 관리하기 위해 프로세스 테이블을 이용한다.
+실행 중인 프로그램의 인스턴스, 운영체제는 이 프로세스에 대한 관리 권한을 갖고 있는데, 프로세스들의 상태를 관리하기 위해 프로세스 테이블을 이용한다.
 프로세스는 실행중, 준비, 대기 세가지 상태를 갖는다. 운영체제가 허용한 프로세스 만이 실행될 수 있으며 이외 프로세스는 대기 상태를 유지한다.
 
 **What is a Thread? What are the differences between process and thread**
