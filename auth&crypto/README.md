@@ -39,7 +39,7 @@ Encrypt it with your private key, and i`ll be able to verify your signature by d
 
 * Diffle-hellman
 * RSA
-* Ellptic Curve
+* Elliptic Curve
 
 ### Hash Functions
 
