@@ -131,3 +131,19 @@ val newProperty: String by extra("kotlinVersion")
 
 첫줄은 project가 갖고있는 프로퍼티들을 변수에 바인딩합니다.
 두번째 줄은 extra에 새로운 kotlinVersion이라는 프로퍼티를 생성하게 됩니다.
+
+### Extra propterty
+extra task는 task별로 혹은 프로젝트 별로 할당됩니다.
+extra 프로퍼티로 새로운 변수를 선언하고 값을 초기화하여 사용합니다.
+
+```kotlin
+tasks.register("myTask") {
+    extra["myProperty"] = "myValue"
+}
+
+tasks.register("printTaskProperties") {
+    doLast {
+        println(tasks["myTasks"].extra["myProperty"])
+    }
+}
+```
