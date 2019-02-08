@@ -58,15 +58,15 @@ ant 빌드 도구와의 특별한 차이점임을 gradle 제단에서는 강조�
 ### 이미 존재하는 테스크 조작
 
 ```kotlin
-task.register("hello") {
+tasks.register("hello") {
     println("hello")
 }
 
-task.register("world") {
+tasks.register("world") {
     println("world")
 }
 
-task.named("world") {
+tasks.named("world") {
     dependsOn("hello")
 }
 ```
