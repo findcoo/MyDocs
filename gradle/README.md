@@ -1,4 +1,4 @@
-# Gradle version 5.1.1 참고 문서
+# Gradle version 5.2 참고 문서
 
 ## 개요
 그래들은 Groovy와 Kotlin DSL을 이용한 소스 빌드 자동화 도구입니다.
