@@ -26,15 +26,15 @@ tbd에서 release까지의 절차는 git flow보다 짧기 때문에 short-lived
 </details>
 
 ### branch by abstraction, feature flags에 능숙해져야한다.
-<summary>📜  상세</summary>
 <details>
+<summary>📜  상세</summary>
 branch by abstraction은 추상화 기법을 통해 코드 변경을 이루는 방법입니다.
 주로 코드 변경이 부분적으로 천천히 이루어질 때 사용됩니다.
 변경이 필요한 로직을 추상화 기법(abstraction class, interface)을 통해 파샤드를 구축하고
 변경이 필요한 클라이언트 코드에서 파샤드를 참조한 후 일차적으로 적용, 추후 전체 로직
 을 변경할때 모든 클라이언트 코드를 파샤드로 변경합니다.
 
-[🔗 branch by abstraction](https://martinfowler.com/bliki/BranchByAbstraction.html)
+* [🔗 branch by abstraction](https://martinfowler.com/bliki/BranchByAbstraction.html)
 
 feature flags는 application, service에 로직을 동적으로 필요에 따라 변경합니다.
 목적에 따라 구현방법이 다양합니다. 해당 문서에서는 feature간에 versioning을 위한 
@@ -42,9 +42,8 @@ feature flags는 application, service에 로직을 동적으로 필요에 따라
 서버 실행 매개변수로 로직을 다르게하거나 아직 지원하면 안되는 코드를 실험하기 위해
 특정 플래그값으로 bean을 생성하거나 할수 있습니다.
 
-[🔗 feature toggles](https://martinfowler.com/articles/feature-toggles.html)
-
-[🔗 spring boot condition](https://reflectoring.io/spring-boot-conditionals)
+* [🔗 feature toggles](https://martinfowler.com/articles/feature-toggles.html)
+* [🔗 spring boot condition](https://reflectoring.io/spring-boot-conditionals)
 
 위와 같은 방법들이 필요한 이유는 release 브랜치를 별도로 두지 않고 공유 branch를 바로 
 release하면서 release 순서를 제어할수 있는 시점이 필요해졌기 때문입니다.
