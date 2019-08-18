@@ -33,6 +33,7 @@ branch by abstraction은 추상화 기법을 통해 코드 변경을 이루는 �
 변경이 필요한 로직을 추상화 기법(abstraction class, interface)을 통해 파샤드를 구축하고
 변경이 필요한 클라이언트 코드에서 파샤드를 참조한 후 일차적으로 적용, 추후 전체 로직
 을 변경할때 모든 클라이언트 코드를 파샤드로 변경합니다.
+
 [🔗 branch by abstraction](https://martinfowler.com/bliki/BranchByAbstraction.html)
 
 feature flags는 application, service에 로직을 동적으로 필요에 따라 변경합니다.
@@ -40,7 +41,9 @@ feature flags는 application, service에 로직을 동적으로 필요에 따라
 목적에 초점을 맞춥니다. 예시로 같은 소스를 사용하는 다른 목적의 서버를 구성할 때.
 서버 실행 매개변수로 로직을 다르게하거나 아직 지원하면 안되는 코드를 실험하기 위해
 특정 플래그값으로 bean을 생성하거나 할수 있습니다.
+
 [🔗 feature toggles](https://martinfowler.com/articles/feature-toggles.html)
+
 [🔗 spring boot condition](https://reflectoring.io/spring-boot-conditionals)
 
 위와 같은 방법들이 필요한 이유는 release 브랜치를 별도로 두지 않고 공유 branch를 바로 
